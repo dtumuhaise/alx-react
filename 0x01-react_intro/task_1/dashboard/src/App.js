@@ -16,7 +16,7 @@ function App() {
           </div>
           <hr />
           <div footer className="App-footer">
-           <p>{getFullYear()} - {getFooterCopy(isIndex)} </p>
+           <p>Copyright {getFullYear()} - {getFooterCopy(isIndex)} </p>
             </div>
     </div>
   );
