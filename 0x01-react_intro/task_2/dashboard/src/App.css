@@ -1,51 +1,59 @@
-.App-body {
-  text-align: left;
-  padding-left: 40px;
-  padding-top: 30px;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-}
-.App-logo {
-  height: 30vmin;
-  /* pointer-events: none; */
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+	--hred: #e1484c;
   }
-}
 
-.App-header {
-  background-color: white;
-  /* min-height: 100vh; */
-  display: flex;
-  align-items: center;
-  color: #e0354b;
-}
-/* h1 {
-  font-size: 1.5em;
-  color: hsl(0, 71%, 64%);
-  text-align: center;
+  body {
+	max-width: 90%;
+	margin: 0 auto;
+  }
 
-} */
+  div {
+	padding: 2px 8px;
+  }
 
-.App-link {
-  color: #61dafb;
-}
+  .App {
+	position: relative;
+	min-height: 100vh;
+  }
 
-hr {
-  border: 2px solid#e0354b;
-  width: 95%;
-  
-}
+  .App-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	border-bottom: 3px solid var(--hred);
+  }
 
-.App-footer{
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-style: italic;
-}
+  .App-header img {
+	width: 200px;
+	height: 200px;
+  }
+
+
+  .App-footer p {
+	font-style: italic;
+	text-align: center;
+	border-top: 3px solid var(--hred);
+	padding: 17px 0;
+  }
+  .App-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+  }
+
+.App-header h1 {
+	margin: auto auto auto 0;
+	font-weight: bold;
+	color: var(--hred);
+  }
+
+  .App-body p {
+	font-weight: bold;
+	margin: 47px 0 0 31px;
+  }
+  .App-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	border-bottom: 3px solid var(--hred);
+  }

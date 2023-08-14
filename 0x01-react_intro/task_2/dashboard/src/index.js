@@ -1,19 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
+import Notifications from './Notifications';
 import App from './App';
-import './Notifications.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <div className="Notifications">
-      <p>Here is the list of notifications</p>
-    </div>
   </React.StrictMode>
 );
+
+const rootNotif = ReactDOM.createRoot(document.getElementById('root-notifications'));
+rootNotif.render(
+  <React.StrictMode>
+    <Notifications />
+  </React.StrictMode>
+);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
