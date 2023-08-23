@@ -9,6 +9,7 @@ import { getLatestNotification } from '../utils/utils';
 import PropTypes from 'prop-types';
 
 
+
 class App extends React.Component {
   static listCourses = [
     {id: 1, name: 'ES6', credit: 60},
@@ -43,7 +44,7 @@ class App extends React.Component {
   componentWillUnmount() {
     window.removeEventListener('keydown', this.handleKeyDown);
   }
-  
+
   render () {
     return (
       <React.Fragment>
@@ -59,11 +60,13 @@ class App extends React.Component {
 }
 
 App.defaultProps = {
-  isLoggedIn: false
+  isLoggedIn: false,
+  logOut: () => {}
 };
 
 App.propTypes = {
-  isLoggedIn: PropTypes.bool
+  isLoggedIn: PropTypes.bool,
+  logOut: PropTypes.func
 };
 
 export default App;
