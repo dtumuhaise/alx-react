@@ -51,7 +51,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Notification listNotifications={this.listNotifications}/>
-        <div className={css(bodystyles.App)}>
+        <div className={css(bodyStyles.App)}>
           <Header />
           {this.props.isLoggedIn ?
             <BodySectionWithMarginBottom title="Course list"><CourseList listCourses={this.listCourses}/></BodySectionWithMarginBottom>
@@ -61,33 +61,33 @@ class App extends React.Component {
           <BodySection title="News from the School">
             <p>Random Text</p>
           </BodySection>
-          <div className={css(footerStyles.footer)}>          <Footer />
-        </div>
+          <div className={css(footerStyles.footer)}>
+            <Footer />
+          </div>
         </div>
       </React.Fragment>
     );
   }
 }
 
-const bodystyles = StyleSheet.create({
+const bodyStyles = StyleSheet.create({
   App: {
     position: 'relative',
-    minHeight: '100vh',
+    minHeight: '100vh'
   }
 });
 
 const footerStyles = StyleSheet.create({
-  footer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontStyle: 'italic',
-    borderTop: '3px solid #E11D3F',
-    padding: '1rem',
-  }
+	footer: {
+		display: 'flex',
+		flexDirection: 'row',
+		justifyContent: 'center',
+		alignItems: 'center',
+		borderTop: '3px solid #E11D3F',
+		padding: '1rem',
+		fontStyle: 'italic',
+	}
 });
-
 
 App.defaultProps = {
   isLoggedIn: false,

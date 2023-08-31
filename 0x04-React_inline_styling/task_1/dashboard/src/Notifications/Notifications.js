@@ -6,20 +6,6 @@ import PropeTypes from 'prop-types';
 import NotificationItemShape from './NotificationItemShape';
 import { StyleSheet, css } from 'aphrodite';
 
-
-const notificationStyles = StyleSheet.create({
-	notifications: {
-    border: '3px dotted var(--holberton-red)',
-    padding: '6px 12px',
-    position: 'absolute',
-    top: '21px',
-    right: '7px',
-    marginTop: '12px',
-    zIndex: '100',
-	}
-});
-
-
 class Notifications extends React.Component {
   constructor(props) {
     super(props);
@@ -94,6 +80,18 @@ class Notifications extends React.Component {
     );
   }
 }
+
+const notificationStyles = StyleSheet.create({
+	notifications: {
+    border: '3px dotted var(--holberton-red)',
+    padding: '6px 12px',
+    position: 'absolute',
+    top: '21px',
+    right: '7px',
+    marginTop: '12px',
+    zIndex: '100',
+	}
+});
 
 Notifications.defaultProps = {
   displayDrawer: false,
