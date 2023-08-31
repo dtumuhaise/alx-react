@@ -71,7 +71,7 @@ class App extends React.Component {
 }
 
 const bodyStyles = StyleSheet.create({
-  App: {
+  body: {
     position: 'relative',
     minHeight: '100vh'
   }
