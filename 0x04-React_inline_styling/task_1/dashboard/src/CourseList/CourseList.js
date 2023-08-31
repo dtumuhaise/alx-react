@@ -29,7 +29,7 @@ function CourseList({ listCourses }) {
 }
 
 const courseListStyles = StyleSheet.create({
-	table: {
+	li: {
 		display: 'table',
 		border: '1px solid',
 		borderCollapse: 'collapse',
